@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>deposit</title>
+</head>
+<body>
+<script>
+    var sum = prompt("Enter sum of deposit:")
+    sum = parseInt(sum)
+    var percent = +prompt("Enter percent of deposit:")
+    var numberOfYears = +prompt("Enter number of years of deposit:");
+    for (var year = 0; year <= numberOfYears; year++) {
+        alert("The sum of deposit after " + year + " year is " + sum.toFixed(2))
+        sum += sum * percent / 100
+    }
+</script>
+</body>
+</html>
